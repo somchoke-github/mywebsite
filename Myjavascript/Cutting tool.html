@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutting Tool</title>
+
+    <!-- Spindle speed and feedrate -->
+    <style>
+        .speedfeedrate {
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 20px;
+            background-color: paleturquoise;
+            padding: 15px;
+            margin: 20px;
+            padding-left: 40px;
+            font-family: monospace;
+            overflow: auto;
+        }
+        
+        .speedfeedrate h4 {
+            margin: 0px;
+            margin-bottom: 3px;
+            font-size: larger;
+        }
+        
+        .speedfeedrate input {
+            background-color: rgb(212, 240, 217);
+            text-align: center;
+        }
+        
+        .speedfeedrate button {
+            background-color: chocolate;
+        }
+    </style>
+
+    <script>
+        function speed() {
+            var endmillDiameter = parseFloat(document.getElementById("milldiameter").value);
+            var cuttingSpeed = parseFloat(document.getElementById("cuttingspeed").value);
+            spindleSpeed = 1000 * cuttingSpeed / (3.142 * endmillDiameter); //  n = 1000V/(3.141D)
+            document.getElementById("speed").value = spindleSpeed.toFixed(0);
+        }
+
+
+        function feedrate() {
+            let numberofFlute = parseFloat(document.getElementById("numberflute").value);
+            let feedperTooth = parseFloat(document.getElementById("feedpertooth").value);
+            let feedRate = spindleSpeed * numberofFlute * feedperTooth; // f = n*fz*z
+            console.log(feedRate); // debug
+            document.getElementById("feed_rate").value = feedRate.toFixed(0);
+        }
+    </script>
+    <!-- Container -->
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Basic Calculation -->
+        <!-- <div class="calculator">
+            <h4>Basic Calculator</h4>
+            <label for="">Number1</label> <br>
+            <input type="text" name="" id="num1" size="10">
+            <select name="" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>    
+    </select>
+            <br>
+            <label for="">Number2</label> <br>
+            <input type="text" name="" id="num2" size="10">
+            <br>
+            <label for="">Result</label>
+            <br>
+            <input type="text" name="" id="result" size="10">
+            <button onclick="basicCalculation()"> Enter </button>
+        </div> -->
+        <!-- Temperature Conversion -->
+        <!-- <div class="tempConversion">
+            <h4>Temperature Conversion</h4>
+            <label for="">Celcius(&#8451;)</label> <br>
+            <input type="text" name="" id="cel" size="10">
+            <button onclick="c2f()">C2F</button> <br> <br>
+
+            <label for="">Fahrenheit(&#8457;)</label> <br>
+            <input type="text" name="" id="fah" size="10">
+            <button onclick="f2c()">F2C</button> <br>
+
+        </div> -->
+
+        <!-- Speed and Feed rate -->
+        <div class="speedfeedrate">
+            <h4>Spindle & Feedrate</h4>
+            <label for="">Endmill diameter(mm)</label> <br>
+            <input type="text" name="" id="milldiameter" size="12" value="10"> <br>
+
+            <label for=""> Cutting speed(m/min)</label> <br>
+            <input type="text" name="" id="cuttingspeed" size="12" value="10">
+
+            <label for=""> Speed(rpm)</label> <br>
+            <input type="text" name="" id="speed" size="12">
+            <button onclick="speed()">Enter</button> <br>
+
+            <label for=""> Number of flute</label> <br>
+            <input type="text" name="" id="numberflute" size="12" value="4"> <br>
+
+            <label for="">Feed/tooth(mm)</label> <br>
+            <input type="text" name="" id="feedpertooth" size="12" value="0.1"> <br>
+
+
+            <label for=""> Feedrate(mm/min)</label> <br>
+            <input type="text" name="" id="feed_rate" size="12">
+            <button onclick="feedrate()">Enter</button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

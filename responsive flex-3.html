@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: peru;
+            height: 120px;
+            flex: 1 100%;
+        }
+        
+        .main {
+            background-color: pink;
+            height: 300px;
+            flex: 3;
+            order: 2;
+        }
+        
+        .sidebar1 {
+            background-color: plum;
+            flex: 1;
+            order: 1;
+        }
+        
+        .sidebar2 {
+            background-color: rgb(164, 209, 113);
+            flex: 1;
+            order: 3;
+        }
+        
+        .footer {
+            background-color: powderblue;
+            height: 80px;
+            flex: 100%;
+            order: 4;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .container * {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="main">
+            <h1>Main</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum eveniet unde deleniti excepturi recusandae incidunt, architecto, ducimus ab neque, porro consectetur vel dolorum reprehenderit quasi libero aut necessitatibus tempora.</p>
+        </div>
+        <div class="sidebar1">
+            <h1>Sidebar1</h1>
+        </div>
+        <div class="sidebar2">
+            <h1>Sidebar2</h1>
+        </div>
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

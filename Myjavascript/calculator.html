@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+
+    <script>
+        function basicCalculation() {
+            var n1 = parseFloat(document.getElementById("num1").value);
+            var n2 = parseFloat(document.getElementById("num2").value);
+            var res;
+            var operation = document.getElementById("operator").value
+            if (operation === "+") {
+                res = n1 + n2;
+            }
+            if (operation === "-") {
+                res = n1 - n2
+            }
+            if (operation === "*") {
+                res = n1 * n2
+            }
+            if (operation === "/") {
+                res = n1 / n2
+            }
+            document.getElementById("result").value = res.toFixed(2);
+        }
+    </script>
+    <!-- Basic calculator -->
+    <style>
+        .calculator {
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 20px;
+            background-color: paleturquoise;
+            padding: 15px;
+            margin: 20px;
+            padding-left: 40px;
+            font-family: monospace;
+        }
+        
+        .calculator h4 {
+            text-align: center;
+            font-size: larger;
+        }
+        
+        .calculator input {
+            background-color: rgb(185, 216, 112);
+        }
+        
+        .calculator button {
+            background-color: pink;
+        }
+        
+        .calculator select {
+            background-color: plum;
+        }
+        
+        input {
+            width: 100px;
+            border-radius: 3px;
+        }
+    </style>
+
+    <!-- Container -->
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Basic Calculation -->
+        <div class="calculator">
+            <h4>Basic Calculator</h4>
+            <label for="">Number1</label> <br>
+            <input type="number" name="" id="num1" size="10" value="10">
+            <select name="" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>    
+    </select>
+            <br>
+            <label for="">Number2</label> <br>
+            <input type="number" name="" id="num2" size="10" value="10">
+            <br>
+            <label for="">Result</label>
+            <br>
+            <input type="text" name="" id="result" size="10">
+            <button onclick="basicCalculation()"> Enter </button>
+        </div>
+    </div>
+</body>
+
+</html>

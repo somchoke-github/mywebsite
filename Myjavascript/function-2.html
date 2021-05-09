@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cirarea,
+        .addition,
+        .triarea,
+        .volume {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 5px;
+        }
+        
+        .image {
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .container h4 {
+            margin: 3px;
+            text-align: center;
+        }
+        
+        input,
+        button {
+            text-align: center;
+            border-radius: 5px;
+            width: 80px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div class="container">
+        <div class="volumeShere">
+            <div class="getdata">
+                Radius: <br> <input type="text" name="" id="radius" value="10">
+            </div>
+            <div class="showresult">
+                The volume of shere is : <br>
+                <input type="text" name="" id="sphereVolumeResult">
+            </div>
+            <div class="clicktorun" style="margin: 5px;">
+                <button id="run">Click</button>
+            </div>
+
+            <script>
+                document.getElementById("run").addEventListener("click", function() {
+                    let r = document.getElementById("radius").value;
+                    document.getElementById("sphereVolumeResult").value = (3 / 4) * 3.141 * r ** 3
+                })
+            </script>
+        </div> -->
+
+
+
+    <!-- <div class="circleperimeter">
+            <div class="getdata">
+                Radius: <br>
+                <input type="text" name="" id="radius" value="10">
+            </div>
+
+            <div class="click">
+                <button id="getperimeter">Click</button>
+            </div>
+
+            <div class="show">
+                The circle perimeter is: <br>
+                <input type="text" name="" id="result">
+            </div>
+
+            <script>
+                document.getElementById("getperimeter").addEventListener("click", function() {
+                    let r = document.getElementById("radius").value;
+                    document.getElementById("result").value = 2 * 3.141 * r;
+                })
+            </script>
+        </div> -->
+
+
+
+
+    <!-- <div class="cylinderVolume">
+            <div class="getdata">
+                Diameter: <br>
+                <input type="text" name="" id="diameter" value="10">
+                <br> Heigth: <br>
+                <input type="text" name="" id="height" value="10">
+            </div>
+            <div class="clicktorun"> <br>
+                <button id="myBtn">Click</button>
+            </div>
+            <br>
+            <div class="show">
+                Cylinder volume is: <br>
+                <input type="text" name="" id="result">
+            </div>
+            <script>
+                let btn = document.getElementById("myBtn");
+                btn.addEventListener("click", function() {
+                    let dia = document.getElementById("diameter").value;
+                    let hei = document.getElementById("height").value;
+                    document.getElementById("result").value = ((3.141 * hei * dia ** 2) / 4)
+                })
+            </script>
+        </div> -->
+
+
+
+    <!-- <div class="volume">
+
+            <pre>
+   Length: <input type="text" name="" id="length" value="4" size="10"  > 
+            
+   Width : <input type="text" name="" id="width" value="4" size="10" > 
+             
+   Height: <input type="text" name="" id="height" value="4" size="10" > 
+                    
+                <button onclick="showMessage()">Click</button>
+            </pre>
+
+
+            <script>
+                function showMessage() {
+                    let l = parseFloat(document.getElementById("length").value);
+                    let w = parseFloat(document.getElementById("width").value);
+                    let h = parseFloat(document.getElementById("height").value);
+                    alert(getVolume(l, w, h)); //call function with parameters
+                }
+
+                function getVolume(l, w, h) {
+                    return (l * w * h)
+                }
+
+
+                //alert(calVolume()) // call function without parameters
+                function calVolume() {
+                    return (l * w * h)
+                }
+            </script>
+        </div> -->
+
+    <!-- <div class="array">
+             <script>
+                const materials = [
+                    'Hydrogen',
+                    'Helium',
+                    'Lithium',
+                    'Beryllium'
+                ];
+
+                console.log(materials.map(m => m.length));
+            </script>
+        </div> -->
+
+    <!-- <div class="calcirarea">
+            <h4>Calulate circle area</h4>
+            Radius: <input type="text" name="" id="radius" value="5">
+            <button onclick="showCircleArea()">Click</button>
+            <script>
+                function calCircleArea(radius) {
+                    return Math.PI * radius ** 2
+                }
+
+                function showCircleArea() {
+                    alert(calCircleArea(document.getElementById("radius").value).toFixed(2));
+                }
+            </script>
+        </div> -->
+
+
+
+
+    <!-- <script>
+            // 1 Function declaration
+            let r = 5;
+            document.write(`The circular area with radius of ${r}  is ${getCircleArea(r).toFixed(2)} square-unit.`)
+            function getCircleArea(radius) {
+                return Math.PI * radius ** 2
+            }
+
+            // 2 Function expression
+            const getCircleArea_1 = function(radius) {
+                return Math.PI * radius ** 2
+            }
+            r = 6;
+            alert(`The circular area with radius of ${r}  is ${getCircleArea_1(r).toFixed(2)} square-unit.`)
+
+            // 3 Allow function
+            const getCircleArea_2 = (radius) => Math.PI * radius ** 2;
+            r = 7;
+            alert(`The circular area with radius of ${r}  is ${getCircleArea_2(r).toFixed(2)} square-unit.`)
+        </script> -->
+
+    <!-- <script>
+            //........1 ประกาศ function ชื่อ add(x,y) แบบมีพารามิเตอร์
+                function add(x, y) {
+                    return x + y // return x+y to add function
+                }                
+                alert(add(5, 5)); // เรียก function add(x,y)
+
+            //........2 ประกาศ function ชื่อ add_1() แบบไม่มีพารามิเตอร์
+                var x, y;
+                x = 5, y = 6
+                function add_1() {
+                    alert(x + y); // show result of x + y
+                }
+                add_1(); //เรียก function add_1
+                
+            //.........3 ประกาศ function ชื่อ add_2(x,y) แบบมีพารามิเตอร์
+                function add_2(x, y) {
+                    alert(x + y) // show result of x + y
+                }
+                add_2(5, 7); //เรียก function add_2
+            </script> -->
+
+    <!-- <div class="cirarea">
+            <div class="image">
+                <img src="/images/area-of-circle.png" alt="" width="150px" height="100px">
+            </div>
+
+            <hr>
+            <h4>Circular area</h4>
+            <label for="">Radius:</label>
+            <input type="text" name="" id="r" value="15" size="1">
+            <button onclick="circleArea()">Click</button>
+            <!--Call function when click-->
+
+    <!-- <script>
+        function circleArea(rad) {
+            var rad = parseFloat(document.getElementById("r").value);
+            alert("Circular area is " + Math.PI * rad ** 2);
+        }
+    </script>
+    </div> -->
+
+    <div class="addition">
+        <h4>Addition</h4>
+        Num1: <input type="text" id="n1"> <br> + <br> Num2: <input type="text" id="n2">
+        <p id="result"></p>
+        <script>
+            let x = document.getElementById("n1");
+            let y = document.getElementById("n2")
+            let z = document.getElementById("result");
+            x.addEventListener("input", add);
+            y.addEventListener("input", add);
+
+
+            function add() {
+                let x = parseFloat(n1.value) || 0;
+                let y = parseFloat(n2.value) || 0;
+                z.innerHTML = `The result is ${(x+y).toFixed(2)} `
+            }
+        </script>
+    </div>
+
+
+
+
+    <!-- <div class="triarea">
+            <h4>Triangle Area</h4>
+            <img src="" alt="">
+            <hr> Base: <br>
+            <input type="text" name="" id="base" value="10">
+            <br> Height: <br>
+            <input type="text" name="" id="height" value="10">
+            <br>
+            <p id="result"></p>
+            <script>
+                let b = document.getElementById("base");
+                let h = document.getElementById("height");
+                let area = document.getElementById("result");
+                b.addEventListener("input", triArea);
+                h.addEventListener("input", triArea);
+                function triArea() {
+                    let base = parseFloat(b.value);
+                    let height = parseFloat(h.value);
+                    area.innerHTML = `The triangle area is ${(0.5*base*height).toFixed(2)}.`
+                }
+            </script>
+        </div> -->
+
+    </div>
+
+
+</body>
+
+</html>

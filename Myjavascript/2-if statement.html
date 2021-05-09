@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            border-radius: 5px;
+            background-color: rosybrown;
+            box-shadow: 5px 5px 5px gold;
+            width: 50px;
+        }
+        
+        button {
+            border-radius: 5px;
+            background-color: greenyellow;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- <script>
+        let year = Number(prompt("Please enter Year to check leap year"))
+        if ((year % 4) == 0) {
+            alert("Year " + year + " is leap year.")
+        } else {
+            alert("Year " + year + " is not leap year.")
+        }
+    </script>
+
+    <script>
+        let num = Number(prompt("Please enter number to check Odd or Even number"))
+        if ((num % 2) == 0) {
+            alert("This number is even number.")
+        } else {
+            alert("This number is odd number.")
+        }
+    </script> -->
+    <!-- <script>
+        let first = 0,
+            ex_minute = 0;
+        let minute = Number(prompt("Please enter amount of cell phone minute"));
+
+        function payment() {
+            if (minute >= 2) {
+                ex_minute = minute - 2;
+                first = 2;
+            } else {
+                first = 0
+            }
+            return first * 5 + ex_minute * 2;
+        }
+        alert("Your phone payment is " + payment() + " bath.")
+    </script> -->
+    <script>
+        let weight = Number(prompt(" Check BMI: Please enter your weight(kg)"));
+        let height = Number(prompt(" Check BMI: Please enter your height(m)"));
+        let bmi = weight / height ** 2;
+        let msg = "";
+        if (bmi < 18.5) {
+            msg = 'Under weight'
+        } else if (bmi < 25) {
+            msg = "Normal"
+        } else if (bmi < 30) {
+            msg = "Over weight"
+        } else msg = "Obese";
+        alert("BMI =" + bmi + " : " + msg)
+    </script>
+</body>
+
+</html>

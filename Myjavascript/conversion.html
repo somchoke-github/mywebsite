@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+
+    <!-- Temperature conversion -->
+    <style>
+        .temp {
+            width: 200px;
+            height: 150px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: #f21170;
+            box-shadow: -12px -5px 20px #72147e;
+            margin: 20px;
+            padding: 0px 10px;
+            font-family: monospace;
+            font-size: 15px;
+            color: white;
+            text-align: center;
+        }
+        
+        .force {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            border: black 2px solid;
+            background-color: #687980;
+            box-shadow: -12px -5px 20px #02475e;
+            margin: 10px;
+            padding: 0px 10px;
+            font-family: monospace;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+        }
+        
+        label {
+            display: block;
+        }
+        
+        .temp input {
+            width: 150px;
+            height: 20px;
+            text-align: center;
+            border-radius: 3px;
+            box-shadow: 10px 3px 0px #ff5200;
+            background-color: #fa9905;
+            border: 0px solid #ff5200;
+            color: white;
+            font-size: 15px;
+        }
+        
+        .force input {
+            width: 150px;
+            height: 20px;
+            text-align: center;
+            border-radius: 3px;
+            box-shadow: 10px 3px 0px #fefecc;
+            background-color: #f3bda1;
+            border: 0px solid #fefecc;
+            color: white;
+            font-size: 15px;
+        }
+    </style>
+
+    <script>
+        function c2f() {
+            let c = parseFloat(document.getElementById("cel").value);
+            let f = c * 9 / 5 + 32;
+            document.getElementById("fah").value = f.toFixed(2);
+        }
+
+        function f2c() {
+            let f = parseFloat(document.getElementById("fah").value);
+            let c = (f - 32) * 5 / 9;
+            document.getElementById("cel").value = c.toFixed(2);
+        }
+    </script>
+    <script>
+        function newtonConverse() {
+            let n = document.getElementById("newton").value;
+            document.getElementById("kgf").value = (n / 9.80665).toFixed(4);
+            document.getElementById("lbf").value = (n / 4.448222).toFixed(4);
+        }
+
+        function kgfConverse() {
+            let kg = document.getElementById("kgf").value;
+            document.getElementById("newton").value = (kg * 9.80665).toFixed(4);
+            document.getElementById("lbf").value = (kg * 2.20462).toFixed(4);
+        }
+
+        function lbfConverse() {
+            let lb = document.getElementById("lbf").value;
+            document.getElementById("newton").value = (lb * 4.44482).toFixed(4);
+            document.getElementById("kgf").value = (lb * 0.45359).toFixed(4);
+        }
+    </script>
+
+    <!-- Container -->
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h4 {
+            font-size: 16.5px;
+            margin: 10px 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Temperature Conversion -->
+        <div class="temp">
+
+            <h4>Temperature Conversion</h4>
+            <label for="">Celcius(&#8451;)</label>
+            <input type="number" name="" id="cel" size="10" oninput="c2f()" onchange="c2f()" value="0">
+            <!-- <button onclick="c2f()">C2F</button> <br> <br> -->
+            <p></p>
+            <label for="">Fahrenheit(&#8457;)</label>
+            <input type="number" name="" id="fah" size="10" oninput="f2c()" onchange="f2c()" value="32">
+            <!-- <button onclick="f2c()">F2C</button> <br> -->
+        </div>
+
+        <!--Force Conversion-->
+        <div class="force">
+            <h4>Force Conversion</h4>
+            Newton(N) <br>
+            <input type="number" name="" id="newton" oninput="newtonConverse()" onchange="newtonConverse()">
+
+            <!-- ....... -->
+            <p></p> Kilogram force (kgf) <br>
+            <input type="number" name="" id="kgf" oninput="kgfConverse()" onchange="kgfConverse()">
+
+            <!-- ...... -->
+            <p></p> Pound force (lbf) <br>
+            <input type="number" name="" id="lbf" oninput="lbfConverse()" onchange="lbfConverse()">
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

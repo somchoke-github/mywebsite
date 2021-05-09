@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-family: 'Bai Jamjuree', sans-serif;
+        }
+        
+        .container * {
+            padding: 5px;
+            margin: 10px;
+            border-radius: 10px;
+            flex: 1;
+            flex-basis: 100%;
+            text-align: center;
+        }
+        
+        .header {
+            background-color: tomato;
+            height: 120px;
+            font-size: 2rem;
+        }
+        
+        .main h2 {
+            text-align: left;
+        }
+        
+        .main {
+            background-color: turquoise;
+            height: 400px;
+            font-size: 1.2rem;
+        }
+        
+        .footer {
+            background-color: yellowgreen;
+            height: 80px;
+            font-size: 1.25rem;
+        }
+        
+        .aside1,
+        .aside1 p {
+            background-color: violet;
+            text-align: left;
+            font-size: 1.2rem;
+        }
+        
+        .aside2,
+        .aside2 p {
+            background-color: peru;
+            text-align: left;
+            font-size: 1.2rem;
+        }
+        
+        @media all and (min-width: 800px) {
+            .main {
+                flex: 2;
+            }
+            .aside1 {
+                order: 1;
+            }
+            .aside2 {
+                order: 3;
+            }
+            .main {
+                order: 2;
+            }
+            .footer {
+                order: 4;
+            }
+        }
+        
+        @media all and (min-width: 600px) {
+            .aside {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>TPS 4 Steps</h1>
+        </div>
+
+        <div class="main">
+
+            <p>
+                <h2>&nbsp;&nbsp;Step 1. Work Site Control</h2>
+                <h2>&nbsp;&nbsp;Step 2. Continuous Flow</h2>
+                <h2>&nbsp;&nbsp;Step 3. Standardized Work</h2>
+                <h2>&nbsp;&nbsp;Step 4. Pull System</h2>
+            </p>
+
+        </div>
+
+        <div class="aside aside1">
+            <br>
+            <p>1. Work Site Control คือ การทำให้สถานที่ทำงานอยู่ในสภาพที่ได้รับการควบคุมดูแล</p>
+            <p>2. Continuous Flow คือการผลิตแบบที่ละชิ้นที่ละชิ้นให้งานไหลอย่างราบรื่น โดยไม่หยุดชะงัก</p>
+        </div>
+
+        <div class="aside aside2">
+            <br>
+            <p>3. Standardized Work คือมาตรฐานที่ใช้ในการผลิต โดยรวบรวมการเคลื่อนไหวของ คนเป็นหลัก เพื่อให้มีวิธีการผลิตอย่างมีประสิทธิภาพมากที่สุดตามลำดับขั้นโดยไม่มีมุดะ
+            </p>
+            <p>
+                4. Pull System คือ การผลิตแบบดึง งานจากกระบวนการก่อนหน้าเพื่อมาผลิตในกระบวนการของตัวเองและวางงาน ที่ทำเสร็จไว้ท้ายกระบวนการ
+            </p>
+
+
+        </div>
+        <div class="footer">
+            <h1>Toyota Production System TPS (SMEs)</h1>
+        </div>
+    </div>
+</body>
+
+</html>

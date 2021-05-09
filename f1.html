@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            background-color: crimson;
+            width: 950px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        .header {
+            background-color: cyan;
+            width: 800px;
+            height: 80px;
+            margin: auto;
+            text-align: center;
+            padding-top: 30px;
+        }
+        
+        .content {
+            width: 950px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        
+        .column {
+            float: left;
+            margin: auto;
+        }
+        
+        .column:nth-child(1) {
+            background-color: cyan;
+            width: 50%;
+        }
+        
+        .column:nth-child(2) {
+            background-color: #00ffaa;
+            width: 30%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <h1>Hello World</h1>
+        </div>
+        <div class="content">
+            <div class="column">
+                <h2>Column 1</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse perspiciatis amet, illum sunt obcaecati culpa repellat, ipsum saepe iste officia, omnis a commodi beatae voluptatem repudiandae. Quo fugit nisi tempora.
+                </p>
+            </div>
+
+            <div class="column">
+                <h2>Column 2</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse perspiciatis amet, illum sunt obcaecati culpa repellat, ipsum saepe iste officia, omnis a commodi beatae voluptatem repudiandae. Quo fugit nisi tempora.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

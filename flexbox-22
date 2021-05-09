@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.hd1{
+    background-color:palegreen;
+    height: 200px;
+    color: rgb(255, 255, 255);
+}
+
+.hd2{
+    background-color: teal;
+    height: 250px;
+    color: white;
+}   
+
+
+.hd3{
+    background-color: rgb(196, 120, 219);
+    height: 300px;
+    color: rgb(0, 0, 0);
+}   
+
+.hd4{
+    background-color: rgb(101, 255, 165);
+    height: 300px;
+}   
+
+.hd5{
+    background-color: rgb(247, 117, 138);
+    height: 500px;
+}   
+.hd6{
+    background-color: rgb(95, 196, 255);
+    height: 500px;
+}   
+
+
+
+.container * {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    flex: 1;
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media all and (min-width: ; 800px;){
+    .main{
+        flex: 3;
+        order: 2;
+    }
+    .aside{
+        order: 1;
+    }
+    .aside2{
+        order: 3;
+    }
+    .main{
+        order: 2;
+    }
+    .footer{
+        order: 4;
+    }
+
+    @media all and (min-width: ; 600px;){
+        .aside{
+            flex: 1;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <div class="container">
+        <div class="hd1">
+         <h1 style="background-color:#355E3B;">TPS 4 STEPs</h1>   
+        <h2 style="font-family: fantasy;color: black;"> STEB 1. Work Site Control<br>
+         STEB 2. Continuous Flow<br> 
+         STEB 3. Standardlized Work <br>
+         STEB 4. Pull System <br></h2>
+        </div>
+    
+
+    <div class="hd2">
+        <h1 style="background-color: yellowgreen;">Work site Control Objective</h1>
+        <h2 style="color: black;"><p><u>วัตถุประสงค์</u> คือ การทำให้สถานที่ทำงานอยู่ใน สภาพที่ได้รับการ ควบคุมดูเเล เพื่อปรับปรุง สภาพหน้างานให้เป้นไปตามเงื่อนไขของ Work Site Control ทั้ง 7 หัวข้อ ซึ่งพื้นฐานสำหรับการปรับปรุง ขั้นตอนต่อๆไป
+
+        </h2></p>
+        <div>
+    
+     <div class="hd3">
+         <h1 style="background-color: tomato;">7 Steb of Work Site Control</h1>
+         <h2 style="color: black;">1. 2 ส (สะสางและสะดวก <br>
+         2. Safety (ความปลอดภัย] <br>
+         3. Built-in-Quality [การสร้างคุณภาพในกระบวนการ <br>
+         4. Equipment Operational Condition Control [การควบคุมสภาพการของอุปกรณ์) <br>
+         uction Control [การควบคุมการผลิต) <br>
+         6. Shipping Control [การควบคุมการจัดส่ง) <br>
+         7. Manpower Control [การควบคุมกำลังคน] Toyota Production System TPS (SMEs)<br>
+        </h2></div>
+
+    <div class="hd4">
+      <h1 style="background-color: rgb(64, 124, 4);">TPS Necessary Condition</h1>
+      <h2 style="color: black;">Necessary condition for innovating TPS is work site must be under control <br>
+         Have standard &nbsp&nbsp&nbsp มีมาตรฐาน <br>
+         Work following  standard &nbsp&nbsp&nbspทำตามมาตรฐาน <br>
+         Check result &nbsp&nbsp&nbsp&nbsp&nbspตรวจสอบผล<br>
+          Handle when problem 0ccur &nbsp&nbsp&nbsp แก้ไขเมื่อมีปัญหา</h2>
+    </div>
+
+     <div class="hd5">
+       <h1 style="background-color: brown;">2S 2ส</h1>
+       <h4 style="color: #000;"><u>วัตถุประสงค์</u><br>
+           มือการแยกของที่ต้องการและไม่ต้องการแล้วกำจัดของที่ไม่ต้องการและกำหนดสถานที่วางเฉพาะของที่ต้องการแล้ววางไว้ให้หยิบใช้ได้ง่าย <br>
+           Fundamental for keeping safety, quality and work efficiency <br>
+           เป็นพื้นฐานของการรักษาความปลอดภัยคุณภาพและประสิทธิภาพในการทำงาน <br>
+           <u>(1) Seiri สะสาง <br></u>
+           1. Separate what is need and what is unneeded. แบ่งแยกของที่จําเป็นและไม่จำเป็นออกจากกัน <br>
+           2. Eliminate what is unneeded. กำจัดของที่ไม่จำเป็นออกไป <br>
+           3. Specify the location for what is needed. กำหนดสถานที่วางและทงของที่จำเป็น <br>
+            <u>(2) Seiton สะดวก <br></u>
+           1. Place where it is easy to use วางให้สะดวกหยิบใช้สอยง่าย <br>
+           2. Indicate what is placed there ระบุว่ามีสิ่งใดวางไว้อยู่ <br>
+           3. Set the rules for placing and follow the rules กำหนดกฏในการวางและวางตามกฏนั้น<br>
+
+    <div class="hd6">
+        <h2 style="color: darkblue;">นายพิศณุพงศ์ กัลป์พิทักษา<br>
+         63070504823<br>
+         TME (APE)
+
+
+
+
+
+
+
+
+        </h2>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+       </h5>
+     </div>
+
+</div>
+
+    </body>
+</html>

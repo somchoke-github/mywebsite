@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header {
+            background-color: plum;
+            height: 120px;
+            flex: 1;
+            flex-basis: 100%;
+        }
+        
+        .main {
+            background-color: powderblue;
+            height: 300px;
+        }
+        
+        .sidel {
+            background-color: lightcoral;
+        }
+        
+        .sider {
+            background-color: rgb(69, 211, 40);
+        }
+        
+        .footer {
+            background-color: lightgrey;
+            height: 60px;
+            order: 4;
+            flex: 1 100%;
+        }
+        
+        .container * {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            flex-basis: 100%;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        @media all and (min-width:800px) {
+            .main {
+                flex: 3;
+                order: 2;
+            }
+            .sidel {
+                order: 1;
+                flex: 1;
+            }
+            .sider {
+                order: 3;
+                flex: 1;
+            }
+            .footer {
+                order: 4;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>TPS 4 Steps</h1>
+        </div>
+        <div class="main">
+            <h1>Toyota Production System</h1>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, magnam consequuntur incidunt rerum quas quo at nemo, neque dignissimos beatae, ipsa deleniti amet voluptatem ratione vel animi architecto. Saepe, dolor?
+        </div>
+        <div class="sidel">
+            <h1>Sidebar1</h1>
+        </div>
+        <div class="sider">
+            <h1>Sidebar2</h1>
+        </div>
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .circle {
+            width: 200px;
+            height: 280px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: blanchedalmond;
+        }
+        
+        .head {
+            text-align: center;
+        }
+        
+        h3 {
+            width: 200px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        
+        .input,
+        .output {
+            margin-left: 10px;
+            padding: 5px;
+        }
+        
+        input,
+        button {
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .button {
+            text-align: center;
+        }
+        
+        .button button {
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        
+        span {
+            padding: 5px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <script>
+        //1. reverse function
+        let str = prompt("Enter message :")
+
+        function reverse(str) {
+            return str.split("").reverse().join("");
+        }
+        document.writeln("The result is" + reverse(str));
+    </script> -->
+
+    <!-- <script>
+        //2. Alphabet order
+        function alphabet_order(str) {
+            return str.split("").sort().join("");
+        }
+        let str = prompt("Enter message : ")
+        document.write("The result is " + alphabet_order(str));
+
+   </script>-->
+
+    <!-- <script>
+        //3. vowelCount
+        str = "Hello";
+        let vowelCount = function() {
+            let voweList = 'aeiouAEIOU';
+            let vCount = 0;
+            for (let i = 0; i < str.length; i++) {
+                if (voweList.indexOf(str[i] !== -1)) {
+                    vCount += 1;
+                }
+            }
+            return vCount;
+        }
+        alert("The number of vowels in " + str + " is " + vowelCount(str));
+    </script> -->
+    <!-- <script>
+        //4. Convert the 1st letter of each string in uppercase
+        let str = "hello world moon star"
+        let touppercase = (str) => {
+            var arry = str.split(' ');
+            var newArry = [];
+            for (var i = 0; i < arry.length; i++) {
+                newArry.push(arry[i].charAt(0).toUpperCase() + arry[i].slice(1));
+            }
+            return newArry.join(' ');
+        }
+        alert(touppercase(str));
+    </script> -->
+
+
+
+    <!-- Radius: <br>
+    <input type="text" name="" id="rad" value="10">
+    <button onclick="getCircleData()">Click</button>
+    <p id="cirArea"></p>
+    <p id="cirPerimeter"></p>
+    <p id="cirSphere"></p>
+    <script>
+        function getCircleData(radius) {
+            radius = document.getElementById("rad").value;
+            document.getElementById("cirArea").innerHTML = Math.PI * radius ** 2;
+            document.getElementById("cirPerimeter").innerHTML = 2 * Math.PI * radius;
+            document.getElementById("cirSphere").innerHTML = (4 / 3) * Math.PI * radius ** 3;
+        }
+    </script> -->
+    <!-- <h3>Circular</h3>
+    Radius <br>
+    <input type="text" name="" id="radius" value="10">
+    <br> Area <br>
+    <input type="" name="" id="area"> <br> Perimeter <br>
+    <input type="" name="" id="perimeter"> <br> Sphere <br>
+    <input type="" name="" id="sphere"> <br> <br>
+    <button onclick="showResult()">Click</button>
+    <script>
+        function showResult() {
+            let radius = document.getElementById("radius").value;
+            radius = parseFloat(radius) || 0
+            document.getElementById("area").value = (Math.PI * radius ** 2).toFixed(2);
+            document.getElementById("perimeter").value = (2 * Math.PI * radius).toFixed(2);
+            document.getElementById("sphere").value = ((4 / 3) * Math.PI * radius ** 3).toFixed(2);
+        }
+    </script> -->
+
+    <!--
+    <div class="container">
+        <div class="circle">
+            <div class="head">
+                <h3>Cicular</h3>
+                <hr>
+            </div>
+            <div class="input">
+                <span>Radius</span>
+                <br>
+                <input type="text" name="" id="radius" value="10">
+            </div>
+            <div class="output">
+                <span>Area</span> <br>
+                <input type="text" name="" id="area"> <br> <span>Perimeter</span> <br>
+                <input type="text" name="" id="perimeter"> <br> <span>Sphere</span> <br>
+                <input type="text" name="" id="sphere">
+            </div>
+            <div class="button">
+                <button onclick="result()">Click</button>
+            </div>
+            <script>
+                function result() {
+                    let r = document.getElementById("radius").value;
+                    document.getElementById("area").value = (Math.PI * r ** 2).toFixed(2);
+                    document.getElementById("perimeter").value = (2 * Math.PI * r).toFixed(2);
+                    document.getElementById("sphere").value = ((4 / 3) * Math.PI * r ** 3).toFixed(2);
+                }
+            </script>
+
+
+        </div>
+    </div> -->
+
+
+    <!-- <div class="container">
+        <div class="circle">
+            <div class="head">
+                <h3>Triangle</h3>
+            </div>
+            <div class="input">
+                Base: <br>
+                <input type="text" name="" id="base" value="10"> <br> Height: <br>
+                <input type="text" name="" id="height" value="10"> <br>
+
+            </div>
+            <div class="output">
+                Area: <br>
+                <input type="text" name="" id="area"> <br>
+            </div>
+            <div class="button">
+                <button onclick="result()">Click</button>
+            </div>
+
+            <script>
+                function result() {
+                    let b = parseFloat(document.getElementById("base").value) || 0;
+                    let h = parseFloat(document.getElementById("height").value) || 0;
+                    document.getElementById("area").value = (0.5 * b * h).toFixed(2)
+                }
+            </script>
+        </div>
+    </div> -->
+
+    <!-- <div class="container">
+        <div class="circle">
+            <div class="head">
+                <h3>Vowel Count</h3>
+            </div>
+            <div class="input">
+                Message <br>
+                <input type="text" name="" id="msg" value="Hello">
+            </div>
+            <div class="output">
+                Number of vowel <br>
+                <input type="text" name="" id="num">
+            </div>
+            <div class="button">
+                <button onclick="countVowel()">Click</button>
+                <button onclick="Clear()">Clear</button>
+            </div>
+            <script>
+                function countVowel() {
+                    let vowel = 'aeiouAEIOU';
+                    let count = 0;
+                    let str = document.getElementById("msg").value;
+                    for (let i = 0; i < str.length; i++) {
+                        if (vowel.indexOf(str[i]) !== -1) {
+                            count += 1
+                        }
+                    }
+                    document.getElementById("num").value = count;
+                }
+
+                function Clear() {
+                    document.getElementById("num").value = "";
+                }
+            </script>
+        </div>
+    </div> -->
+
+    <!-- <div class="container">
+        <div class="circle">
+            <div class="head">
+                <h3>Convert to uppercase</h3>
+            </div>
+            <div class="input">
+                Message <br>
+                <input type="text" name="" id="msg" value="hello moon mars man">
+            </div>
+            <div class="output">
+                Result <br>
+                <input type="text" name="" id="newmsg">
+            </div>
+            <div class="button">
+                <button onclick="toupperletter()">Click</button>
+            </div>
+        </div>
+        <script>
+            function toupperletter() {
+                let str = document.getElementById("msg").value;
+                let arry = str.split(" ");
+                let newarry = [];
+                for (var i = 0; i < arry.length; i++) {
+                    newarry.push(arry[i].charAt(0).toUpperCase() + arry[i].slice(1));
+                }
+
+                // for (var i = 0; i < arry.length; i++) {
+                //     newarry.push(arry[i].charAt(0).toUpperCase() + arry[i].slice(1));
+                // }
+                document.getElementById("newmsg").value = newarry.join(' ');
+            }
+        </script>
+    </div> -->
+    <!-- <div class="container">
+        <div class="circle">
+            <div class="head">
+                <h3>Show Today Date</h3>
+            </div>
+            <div class="input">
+
+            </div>
+            <div class="output">
+                Date (mm-dd-yyyy) <br>
+                <input type="text" name="" id="d1"> <br> Date (mm/dd/yyyy) <br>
+                <input type="text" name="" id="d2"> <br> Date (dd-mm-yyyy) <br>
+                <input type="text" name="" id="d3"> <br> Date (dd/mm/yyyy) <br>
+                <input type="text" name="" id="d4"> <br> Time <br>
+                <input type="text" name="" id="d5">
+
+            </div>
+            <div class="run">
+                <button onclick="show()" style="margin-left: 60px; margin-top: 5px;">Execute</button>
+            </div>
+            <script>
+                const show = () => {
+                    let today = new Date();
+                    let dd = today.getDate();
+                    let mm = today.getMonth();
+                    let yyyy = today.getFullYear();
+                    let time = today.toUTCString();
+                    if (dd < 10) {
+                        '0' + dd
+                    };
+                    if (mm < 10) {
+                        '0' + mm
+                    }
+
+                    document.getElementById("d1").value = `${mm}-${dd}-${yyyy}`;
+                    document.getElementById("d2").value = `${mm}/${dd}/${yyyy}`;
+                    document.getElementById("d3").value = `${dd}-${mm}-${yyyy}`;
+                    document.getElementById("d4").value = `${dd}/${mm}/${yyyy}`;
+                    document.getElementById("d5").value = `${time}`;
+                }
+            </script>
+        </div>
+    </div> -->
+
+    <!-- <div>
+        <p id="demo"></p>
+        <script>
+            document.addEventListener('click', function() {
+                document.getElementById('demo').innerHTML = 'Hello World'
+            })
+        </script>
+    </div> -->
+    <!-- <div>
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2016/02/5718897981_10faa45ac3_b-640x624.jpg" alt="Eyeball" id='img' width="100">
+        <script>
+            document.getElementById("img").addEventListener('mouseover', function() {
+                this.style = "box-shadow:10px 10px 10px blue";
+                this.width = "200";
+            })
+            document.getElementById("img").addEventListener('mouseout', function() {
+                this.style = "";
+                this.width = "100";
+            })
+        </script> -->
+    <!-- <div>
+        <button id="btn" style="background-color: blue; border-radius: 5px;">Click</button>
+        <script>
+            document.getElementById('btn').addEventListener('mouseover', function() {
+                this.style = 'background-color:red; border-radius: 5px';
+            })
+            document.getElementById('btn').addEventListener('mouseout', function() {
+                this.style = 'background-color:blue;'
+            })
+        </script>
+    </div> -->
+    <!-- <div class="container">
+        <div class="circle">
+            <div class="head">
+                <h3>Triangle</h3>
+            </div>
+            <div class="input">
+                Base(mm) <br>
+                <input type="text" name="" id="base" value="10" ; ">
+                <br> Height(mm) <br>
+                <input type="text " name=" " id='height' value='10'>
+            </div>
+            <div class="output ">
+                Area(square-mm) <br>
+                <input type="text " name=" " id="area ">
+            </div>
+            <div class="button ">
+                <button id = 'btn' >Click</button>
+            </div>
+            <script>
+                document.getElementById('btn').addEventListener('click',function(){
+                    let b = parseFloat(document.getElementById('base').value);
+                    let h = parseFloat(document.getElementById('height').value);
+                    let a = 0.5*b*h;
+                    document.getElementById('area ').value = a.toFixed(2);                   
+                })
+            </script>
+        </div> -->
+    <!-- <div class="container">
+        <div class="circle">
+            <div class="head">
+                <h3>Cylinder</h3>
+            </div>
+            <div class="input">
+                Diameter(mm) <br>
+                <input type="text" name="" id="dia" value="10">
+
+                <br> Height (mm) <br>
+                <input type="text" name="" id="height" value="10"> <br>
+
+            </div>
+            <div class="output">
+                Volume(mm<sup>3</sup>) <br>
+                <input type="text" name="" id="vol">
+
+                <br> Area (mm<sup>2</sup>) <br>
+                <input type="text" name="" id="area">
+            </div>
+            <div class="button">
+
+            </div>
+            <script>
+                let d = document.getElementById('dia');
+                let h = document.getElementById('height');
+                let v = document.getElementById('vol');
+                let a = document.getElementById('area');
+                d.addEventListener('input', fvolume);
+                d.addEventListener('input', farea);
+                h.addEventListener('input', fvolume);
+                h.addEventListener('input', farea);
+
+                function fvolume() {
+                    let D = parseFloat(d.value) || 0;
+                    let H = parseFloat(h.value) || 0;
+                    v.value = (H * (3.141 * D ** 2) / 4).toFixed(2);
+                }
+
+                function farea() {
+                    let D = parseFloat(d.value) || 0;
+                    let H = parseFloat(h.value) || 0;
+                    a.value = ((3.141 * D ** 2) / 4 + 3.141 * D * H).toFixed(2);
+                }
+            </script>
+        </div>
+    </div>
+
+
+    </div> -->
+
+
+    <!-- <div>
+        <script>
+            var obj = {};
+            obj.product = "Box";
+            obj.price = 100;
+            obj.number = 6;
+            obj.Total = function() {
+                return this.price * this.number
+            }
+            alert(`The total price of ${obj.number}  ${obj.product},${obj.price} bath each, is ${obj.Total()} bath. `)
+        </script>
+    </div> -->
+
+    <!-- <div>
+        <script>
+            let personBMI = {
+                weight: 65,
+                height: 1.72,
+                bmi: function() {
+                    return this.weight / (this.height ** 2)
+                }
+            }
+            console.log(personBMI.bmi());
+            personBMI.weight = 70;
+            console.log(personBMI.bmi());
+        </script>
+    </div> -->
+    <!-- <div>
+        <script>
+            let triangle = {
+                base: 10,
+                heigth: 10,
+                getArea: function() {
+                    return 0.5 * this.base * this.heigth
+                }
+            }
+            triangle.base = 5;
+            triangle.heigth = 5;
+            alert("The triangle area is " + triangle.getArea())
+        </script>
+    </div> -->
+
+    <!-- <div class="container">
+        <div class="circle">
+            <div class="head">
+                <h3>circle</h3>
+            </div>
+            <div class="input">
+                Radius(mm): <br>
+                <input type="number" name="" id="rad" placeholder="Radius" oninput="circle1(this.value)" onchange="circle1(this.value)">
+            </div>
+            <div class="output">
+                Area (mm<sup>2</sup> ) <br>
+                <input type="text" name="" id="area">
+            </div>
+            <div class="button">
+                <button onclick="circle1()">Click</button>
+            </div>
+            <script>
+                function circle1() {
+                    let radius = parseFloat(document.getElementById("rad").value);
+
+                    let a = (Math.PI * radius ** 2).toFixed(2)
+                    document.getElementById("area").value = a;
+
+                }
+            </script>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+</body>
+
+</html>

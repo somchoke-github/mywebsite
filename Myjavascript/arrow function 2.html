@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .addition,
+        .sqr,
+        .random_1,
+        .random_2,
+        .cylindervolume,
+        .pneumatic {
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 5px;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .container h4 {
+            margin: 3px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="addition">
+            <hr>
+            <h4>Addition</h4>
+            <label for="">Value 1</label> <br>
+            <input type="text" name="" id="v1" value="20.5"> <br>
+            <label for="">Value 2</label> <br>
+            <input type="text" name="" id="v2" value="10.5"> <button id="btn">Click</button>
+            <script>
+                document.getElementById("btn").addEventListener("click", () => {
+                    let v1 = parseFloat(document.getElementById("v1").value);
+                    let v2 = parseFloat(document.getElementById("v2").value);
+                    alert(v1 + v2);
+                })
+            </script>
+        </div>
+
+        <div class="sqr">
+
+            <script>
+                let sqr = () => {
+                    let v3 = parseFloat(document.getElementById("v3").value);
+                    alert(Math.sqrt(v3));
+                }
+            </script>
+            <hr>
+            <h4>Square root</h4>
+            <label for="">Enter Value</label> <br>
+            <input type="text" name="" id="v3" value="9">
+            <button onclick="sqr()">Click</button>
+        </div>
+
+        <div class="random_1">
+            <hr>
+            <h4>Random Number 1-10</h4>
+            <p id="demo"></p>
+
+            <script>
+                let random = () => {
+                    document.getElementById("demo").innerHTML = (Math.floor(Math.random(1) * 10 + 1));
+                }
+            </script>
+            <button onclick="random()">Click</button>
+        </div>
+
+        <div class="random_2">
+            <hr>
+            <h4>Random Number 1-100</h4>
+            <button id="demo1">Click</button>
+            <p id="demo2"></p>
+            <script>
+                document.getElementById("demo1").addEventListener("click", () => {
+                    document.getElementById("demo2").innerHTML = Math.floor(Math.random() * 100 + 1);
+                })
+            </script>
+        </div>
+
+        <div class="cylindervolume">
+            <script>
+                let volume = () => {
+                    let d = parseFloat(document.getElementById("dia1").value);
+                    document.getElementById("show1").innerHTML = ((Math.PI * (d ** 2)) / 4).toFixed(2)
+                }
+            </script>
+
+            <hr>
+            <h4>Cylindical Volume</h4>
+            Diameter: <br>
+            <input type="text" name="" id="dia1">
+            <button onclick="volume()">Click</button>
+            <p id="show1"></p>
+
+
+        </div>
+
+        <div class="pneumatic">
+            <hr>
+            <h4>Pneumatic Force</h4>
+
+            DAC diameter (mm)
+            <select name="" id="d">
+                <option value="12">12</option>
+                <option value="16">16</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="32">32</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+                <option value="100">100</option>
+            </select> <br> <br> Service Pressure (bar)
+
+            <select name="" id="p">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select> &nbsp;
+            <button id="bnt">Click</button>
+            <script>
+                document.getElementById("bnt").addEventListener("click", () => {
+                    let d = parseFloat(document.getElementById("d").value);
+                    let p = parseFloat(document.getElementById("p").value);
+                    let a = (Math.PI * ((0.1 * d) ** 2)) / 4;
+                    alert((p * a).toFixed(2) + " kgf");
+
+                });
+            </script>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

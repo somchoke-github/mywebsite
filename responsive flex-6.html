@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header {
+            background-color: palegoldenrod;
+            height: 120px;
+        }
+        
+        .main {
+            background-color: palegreen;
+            height: 400px;
+        }
+        
+        .aside1 {
+            background-color: palevioletred;
+        }
+        
+        .aside2 {
+            background-color: powderblue;
+        }
+        
+        .footer {
+            background-color: plum;
+            height: 80px;
+        }
+        
+        .main p {
+            text-align: justify;
+        }
+        
+        .container * {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 20px;
+            flex-basis: 100%;
+            flex-grow: 1;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        @media all and (min-width:800px) {
+            .main {
+                flex: 3;
+                order: 2;
+                overflow: auto;
+            }
+            .aside1 {
+                order: 1;
+            }
+            .aside2 {
+                order: 3;
+            }
+            .footer {
+                order: 4
+            }
+        }
+        
+        @media all and (min-width:600px) {
+            .aside {
+                flex: 1
+            }
+            .main {
+                overflow: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="main">
+            <h1>Main</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptate impedit fugit cupiditate nemo, eius, doloremque officiis pariatur quidem facilis officia voluptas ipsa inventore culpa. Incidunt temporibus ad saepe facere eos est alias illo
+                dolore a! Iste culpa aut unde officia nemo asperiores nobis doloremque vitae amet. Fugiat, asperiores ut! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quae eaque fugiat asperiores nostrum voluptatem qui ex iure. Reprehenderit
+                dolorem debitis est voluptatibus ipsa. Quis velit ratione aperiam est. Corrupti?
+            </p>
+        </div>
+        <div class="aside1  aside">
+            <h1>Aside-1</h1>
+        </div>
+        <div class="aside2 aside">
+            <h1>Aside-2</h1>
+        </div>
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+
+    </div>
+</body>
+
+</html>

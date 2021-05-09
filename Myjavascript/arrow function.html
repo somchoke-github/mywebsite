@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rectarea,
+        .cirarea,
+        .triarea,
+        .trapezoid,
+        .cube {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 5px;
+            background-color: palegreen;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .container h4 {
+            margin: 3px;
+            text-align: center;
+        }
+        
+        .container input {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="rectarea">
+            <script>
+                function rectArea_1() {
+                    var w = parseFloat(document.querySelector("width").value);
+                    let l = parseFloat(document.getElementById("length").value);
+                    return alert(w);
+                }
+                let rectArea_2 = function() {
+                    var w = parseFloat(document.getElementById("width").value);
+                    let l = parseFloat(document.getElementById("length").value);
+                    return alert(w * l);
+                }
+                let rectArea_3 = () => {
+                    var w = parseFloat(document.getElementById("width").value);
+                    let l = parseFloat(document.getElementById("length").value);
+                    return alert(w * l);
+                }
+            </script>
+            <h4>Rectangle area</h4>
+            <label for="">Width</label> <br>
+            <input type="text" name="" id="width" value=17.00> <br>
+            <label for="">Length</label> <br>
+            <input type="text" name="" id="length" value=10>
+            <button onclick="rectArea_3()">Click</button>
+        </div>
+
+
+        <div class="cirarea">
+            <script>
+                function cirArea_1() {
+                    let r = parseFloat(document.getElementById("radius").value);
+                    alert(`The circular area with radius of ${r} is ${(Math.PI * r**2).toFixed(2)} .`)
+                }
+                let cirArea = () => {
+                    let r = parseFloat(document.getElementById("radius").value);
+                    alert(`The circular area with radius of ${r} is ${(Math.PI * r**2).toFixed(2)} .`)
+                }
+            </script>
+            <h4>Circular Area</h4>
+            <label for="">Radius(mm)</label> <br>
+            <input type="text" name="" id="radius" value="10"> <button onclick="cirArea()">Click</button>
+        </div>
+
+        <div class="triarea">
+            <h4>Triangle Area</h4>
+            <label for="">Base(mm)</label> <br>
+            <input type="text" name="" id="base" value="10"> <br>
+            <label for="">Height(mm)</label> <br>
+            <input type="text" name="" id="heigth" value="10"> <button id="mybtn">Click</button>
+            <script>
+                document.getElementById("mybtn").addEventListener("click", () => {
+                    let b = parseFloat(document.getElementById("base").value);
+                    let h = parseFloat(document.getElementById("heigth").value);
+                    alert(`The tringle area is ${(0.5 * b * h).toFixed(2)} .`);
+                });
+            </script>
+        </div>
+
+        <div class="trapezoid">
+            <h4>Trapezoid Area</h4>
+            <label for="">a length</label> <br>
+            <input type="text" name="" id="a" value="10"> <br>
+            <label for="">b length</label> <br>
+            <input type="text" name="" id="b" value="10"> <br>
+            <label for="">Height</label> <br>
+            <input type="text" name="" id="h" value="10"> <button id="bnt_1">Click</button>
+
+            <script>
+                document.getElementById("bnt_1").addEventListener("click", () => {
+                    let a = parseFloat(document.getElementById("a").value);
+                    let b = parseFloat(document.getElementById("b").value);
+                    let h = parseFloat(document.getElementById("h").value);
+                    alert(`The area of trapezoid is ${(0.5*(a+b)*h).toFixed(2)}.`)
+
+                })
+            </script>
+        </div>
+        <script>
+            let cubic = () => {
+                let l = parseFloat(document.getElementById("l").value);
+                let w = parseFloat(document.getElementById("w").value);
+                let h = parseFloat(document.getElementById("h").value);
+                alert(`The cubic volume is ${(l*w*h).toFixed(2)}.`);
+            }
+        </script>
+        <div class="cube">
+            <h4>Cube Volume</h4>
+            Length <br> <input type="text" name="" id="l" value="10"> <br> Width <br> <input type="text" name="" id="w" value="10"> <br> Height <br> <input type="text" name="" id="h" value="10">
+            <button onclick="cubic()">Click</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function basicCalculator() {
+            var num1, num2, calResult;
+            num1 = parseFloat(document.getElementById("num1").value);
+            num2 = parseFloat(document.getElementById("num2").value);
+            var operation = document.getElementById("operator").value;
+            if (operation === "+") {
+                calResult = num1 + num2;
+            }
+            if (operation === "-") {
+                calResult = num1 - num2;
+            }
+            if (operation === "*") {
+                calResult = num1 * num2;
+            }
+            if (operation === "/") {
+                calResult = num1 / num2;
+            }
+            document.getElementById("result").value = calResult.toFixed(2);
+        }
+    </script>
+
+    <style>
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .calculation {
+            margin: 20px;
+            width: 180px;
+            height: 180px;
+            border: 3px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            padding-left: 20px;
+            font-family: fantasy;
+            background-color: chartreuse;
+        }
+        
+        .calculation h3 {
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .calculation button,
+        .tempConversion button {
+            font-family: fantasy;
+            background-color: coral;
+        }
+        
+        .tempConversion {
+            margin: 20px;
+            width: 180px;
+            height: 180px;
+            border: 3px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            padding-left: 20px;
+            font-family: fantasy;
+            background-color: rgb(221, 255, 0);
+        }
+        
+        .tempConversion h4 {
+            margin: 5px;
+        }
+    </style>
+    <script>
+        function c2f() {
+            var celceius, fahrenheit;
+            celceius = parseFloat(document.getElementById("cel").value);
+            // fahrenheit = parseFloat(document.getElementById("fah").value);
+            // document.getElementById("cel").value = ((5 / 9) * (fahrenheit - 32)).toFixed(1);
+            document.getElementById("fah").value = ((celceius * 9 / 5) + 32).toFixed(1);
+
+        }
+
+        function f2c() {
+            var celceius, fahrenheit;
+            // celceius = parseFloat(document.getElementById("cel").value);
+            fahrenheit = parseFloat(document.getElementById("fah").value);
+            document.getElementById("cel").value = ((5 / 9) * (fahrenheit - 32)).toFixed(1);
+            // document.getElementById("fah").value = ((celceius * 9 / 5) + 32).toFixed(1);
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- calcultor -->
+        <div class="calculation">
+
+            <h3>Basic Calculator</h3>
+            <label for="">Number 1</label> <br>
+            <input type="text" name="" id="num1" size="10">
+
+            <select name="" id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <br>
+            <label for="">Number 2</label> <br>
+            <input type="text" name="" id="num2" size="10"> <br>
+
+            <label for="">Result</label> <br>
+            <input type="text" name="" id="result" size="10">
+            <button onclick="basicCalculator()">Enter</button>
+        </div>
+
+        <!-- C2F & F2C -->
+        <div class="tempConversion">
+
+            <div id="tempCon"></div>
+
+            <h4>Temperature Conversion</h4>
+            <br>
+            <label for="">Celcius (&#x2103;)</label> <br>
+            <input type="text" name="" id="cel" size="15">
+            <button onclick="c2f()">C2F</button>
+            <br>
+            <br> <label for="">Fahrenheit (&#8457;)</label> <br>
+            <input type="text" name="" id="fah" size="15"> <button onclick="f2c()">F2C</button>
+
+        </div>
+    </div>
+</body>
+
+</html>

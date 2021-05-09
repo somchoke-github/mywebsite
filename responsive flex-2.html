@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .container * {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            flex-basis: 100%;
+            text-align: center;
+        }
+        
+        .header {
+            background-color: tomato;
+            height: 120px;
+        }
+        
+        .main {
+            background-color: thistle;
+            height: 300px;
+            font-size: 20px;
+        }
+        
+        .main p {
+            text-align: justify;
+        }
+        
+        .footer {
+            background-color: violet;
+            height: 80px;
+        }
+        
+        .aside1 {
+            background-color: yellow;
+        }
+        
+        .aside2 {
+            background-color: turquoise;
+        }
+        
+        @media all and (min-width:800px) {
+            .main {
+                flex: 3;
+            }
+            .aside1 {
+                order: 1;
+            }
+            .aside2 {
+                order: 3;
+            }
+            .main {
+                order: 2;
+            }
+            .footer {
+                order: 4;
+            }
+            @media all and (min-width:600px) {
+                .aside {
+                    flex: 1;
+                }
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+
+        <div class="main">
+            <h1>Main</h1>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus culpa maxime qui modi quas quis veniam nisi aut cupiditate cum? Consequatur, et corrupti beatae commodi tenetur voluptas eius assumenda ad! </p>
+        </div>
+
+        <div class="aside aside1">
+            <h1>Aside1</h1>
+        </div>
+
+        <div class="aside aside2">
+            <h1>Aside2</h1>
+        </div>
+
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-wudth, initial-scale=1.0">
+    <title>สรุปโค้ดที่เรียนลงตาราง</title>
+</head>
+
+<body bgcolor="FFEBCD">
+    <h1>ตารางสรุป</h1>
+    <table border="3" width=100% bordercolor="RED">
+        <thead>
+            <tr>
+                <th rowspan="2">ลำดับ</th>
+                <th rowspan="2">Code</th>
+                <th rowspan="2">อธิบาย</th>
+                <th colspan="2">ตัวอย่างการใช้งงาน</th>
+            </tr>
+            <tr>
+                <th>รูป</th>
+                <th>วิธี</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>< h1,h2,h3,h4 ></h1></th>
+                <th>ขนาดตัวอักษร</th>
+                <th><img src="image/แสดง code/h1,h2,h3,h4.JPG"width=""></th>
+                <th>ใส่นำหน้าประโยค</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>< hr ></th>
+                <th>เส้นขั้นบรรทัด</th>
+                <th><img src="image/แสดง code/hr.JPG"width="80%"></th>
+                <th>ใส่ขั้นบรรทัด</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>< p,div,pre ></th>
+                <th>แสดงแบบ ประโยค</th>
+                <th><img src="image/แสดง code/p,div,pre.JPG"width="90%"></th>
+                <th>ใส่นำหน้าประโยค</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>< br ></th>
+                <th>เปลี่ยนบรรทัด</th>
+                <th><img src="image/แสดง code/br.JPG"width=""></th>
+                <th>ใส่ได้ทุกที่</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th>< strong,b ></strong></th>
+                <th>แสดงตัวอักษรหนา</th>
+                <th><img src="image/แสดง code/b,strong.JPG"width=""></th>
+                <th>ใส่นำหน้าประโยค</th>
+            </tr>
+            <tr>
+                <th>6</th>
+                <th>< i,em ></th>
+                <th>แสดงตัวอักษรเอียง</th>
+                <th><img src="image/แสดง code/i,em.JPG"width=""></th>
+                <th>ใส่นำหน้าประโยค</th>
+            </tr>
+            <tr>
+                <th>7</th>
+                <th>< center ></th>
+                <th>ทำให้ตัวอักษรอยู่กลางหน้า</th>
+                <th><img src="image/แสดง code/center.JPG"width="60%"></th>
+                <th>ใส่นำหน้าประโยค</th>
+            </tr>
+            <tr>
+                <th>8</th>
+                <th>< ul ></ul></th>
+                <th>แสดงขั้นตอนแบบ จุด</th>
+                <th><img src="image/แสดง code/ul.JPG"width=""></th>
+                <th>ใส่กำกับ "li"</th>
+            </tr>
+            <tr>
+                <th>9</th>
+                <th>< ol ></ol></th>
+                <th>แสดงขั้นตอนแบบ ตัวเลข</th>
+                <th><img src="image/แสดง code/ol.JPG"width=""></th>
+                <th>ใส่กำกับ "li"</th>
+            </tr>
+            <tr>
+                <th>10</th>
+                <th>< img src="ไฟล.jpg" ></th>
+                <th>แทรกรูปภาพ</th>
+                <th><img src="image/แสดง code/ig.JPG"width=""></th>
+                <th>เพิ่มบรรทัดใหม่</th>
+            </tr>
+            <tr>
+                <th>11</th>
+                <th>< a href ="URL.net"-ชื่อที่แสดง ></a></th>
+                <th>ปุ่มคลิกเข้าเว็ป</th>
+                <th><img src="image/แสดง code/URL.JPG"width=""></th>
+                <th>เพิ่มบรรทัดใหม่</th>
+            </tr>
+            <tr>
+                <th>12</th>
+                <th>< table border="1" wrdth="50%" ></th>
+                <th>เริ่มคำสั่งตาราง<br>เลข1บอกเส้นตาราง</th>
+                <th><img src="image/แสดง code/table.JPG"width="60%"></th>
+                <th>ใส่เมื่อเริมตาราง</th>
+            </tr>
+            <tr>
+                <th>13</th>
+                <th>< writh="--%" ></th>
+                <th>บอกความยาว</th>
+                <th><img src=""width=""></th>
+                <th>ใส่ใน code ที่ต้องการกำหนดความยาว</th>
+            </tr>
+            <tr>
+                <th>14</th>
+                <th>< tr ></th>
+                <th>บอกชั้นของตาราง</th>
+                <th><img src="image/แสดง code/tr.JPG"width="30%"></th>
+                <th>ใส่เมื่อเริ่งบรรทัดตารางใหม่</th>
+            </tr>
+            <tr>
+                <th>15</th>
+                <th>< th ></th>
+                <th>บอกช่องของตาราง</th>
+                <th><img src="image/แสดง code/th.JPG"width="50%"></th>
+                <th>ใส่เมื่อเริ่มช่องตารางใหม่</th>
+            </tr>
+            <tr>
+                <th>16</th>
+                <th>< BGcolor=" รหัสสี " ></BGcolor></th>
+                <th>แสดงสีพื้นหลัง</th>
+                <th><img src="image/แสดง code/BGcolor.JPG"width=""></th>
+                <th>ใส่ใน code ที่ต้องการใส่สี</th>
+            </tr>
+            <tr>
+                <th>17</th>
+                <th>< body background="ชื่อภาพ" ></body></th>
+                <th>แสดงภาพพื้นหลัง</th>
+                <th><img src="image/แสดง code/BG.JPG"width=""></th>
+                <th>ใส่นำหน้า</th>
+            </tr>
+            <tr>
+                <th>18</th>
+                <th>< mark style="รหัสสี" ></th>
+                <th>มาร์คตัวอักษรที่ต้องการ</th>
+                <th><img src=""width=""></th>
+                <th>ใส่นำหน้าประโยคที่ต้องการมาร์ค</th>
+            </tr>
+            <tr>
+                <th>19</th>
+                <th>< small ></th>
+                <th>ทำให้ตัวอักษรเล็กลง</th>
+                <th><img src="image/แสดง code/small.JPG"width=""></th>
+                <th>ใส่นำหน้าประโยค</th>
+            </tr>
+            <tr>
+                <th>20</th>
+                <th>< del ></del></th>
+                <th>แสดงเส้นขีดกลางตัวอักษร</th>
+                <th><img src="image/แสดง code/del.JPG"width=""></th>
+                <th>ใส่นำหน้าประโยค</th>
+            </tr>
+            <tr>
+                <th>21</th>
+                <th>< ins,u ></th>
+                <th>แสดงเส้นขีดใต้ตัวอักษร</th>
+                <th><img src="image/แสดง code/ins,u.JPG"width=""></th>
+                <th>ใส่นำหน้า</th>
+            </tr>
+            <tr>
+                <th>22</th>
+                <th>< sub ></th>
+                <th>เลขห้อยด้านท้าย</th>
+                <th><img src="image/แสดง code/sub.JPG"width=""></th>
+                <th>ใส่นำหน้าเลข</th>
+            </tr>
+            <tr>
+                <th>23</th>
+                <th>< sup ></th>
+                <th>เลขยกกำลัง</th>
+                <th><img src="image/แสดง code/sup.JPG"width=""></th>
+                <th>ใส่นำหน้าตัวเลข</th>
+            </tr>
+            <tr>
+                <th>24</th>
+                <th>< label ></th>
+                <th>แสดงข้อความ</th>
+                <th><img src="image/แสดง code/label.JPG"width=""></th>
+                <th>ใส่นำหน้าข้อความ</th>
+            </tr>
+            <tr>
+                <th>25</th>
+                <th>< input type="taxt" ></th>
+                <th>แสดงช่องพิมพ์ข้อความ</th>
+                <th><img src="image/แสดง code/input.JPG"width=""></th>
+                <th>ใส่บรรทัดใหม่</th>
+            </tr>
+            <tr>
+                <th>26</th>
+                <th>< textarea ></th>
+                <th>ช่องพิมพ์ข้อความขนาดใหญ่</th>
+                <th><img src="image/แสดง code/textarea.JPG"width=""></th>
+                <th>ใส่บรรทัดใหม่</th>
+            </tr>
+            <tr>
+                <th>27</th>
+                <th>< input type="number" ></th>
+                <th>ช่องกรอกตัวเลข</th>
+                <th><img src="image/แสดง code/inputnum.JPG"width=""></th>
+                <th>ใส่บรรทัดใหม่</th>
+            </tr>
+            <tr>
+                <th>28</th>
+                <th>< input type="date" ></th>
+                <th>ช่องกรอกวันที่</th>
+                <th><img src="image/แสดง code/inputdate.JPG"width=""></th>
+                <th>ใส่บรรทัดใหม่</th>
+            </tr>
+            <tr>
+                <th>29</th>
+                <th>< select ></th>
+                <th>ช่องให้เลือก</th>
+                <th><img src="image/แสดง code/select.JPG"width=""></th>
+                <th>ใส่กำกับ Code option </th>
+            </tr>
+            <tr>
+                <th>30</th>
+                <th>< option ></th>
+                <th>แสดงตัวเลือก</th>
+                <th><img src="image/แสดง code/option.jpg"width=""></th>
+                <th>ใส่นำหน้าประโยค</th>
+            </tr>
+        </thead>
+    </table>
+</body>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header {
+            background-color: powderblue;
+            height: 120px;
+        }
+        
+        .main {
+            background-color: rosybrown;
+            height: 300px;
+        }
+        
+        .sidebarl {
+            background-color: royalblue;
+        }
+        
+        .sidebarr {
+            background-color: salmon;
+        }
+        
+        .footer {
+            background-color: springgreen;
+            height: 80px;
+        }
+        
+        .container * {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            text-align: center;
+            flex-basis: 100%;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        @media all and (min-width:800px) {
+            .main {
+                flex: 3;
+                order: 2;
+            }
+            .sidebarl {
+                flex: 1;
+                order: 1;
+            }
+            .sidebarr {
+                flex: 1;
+                order: 2;
+            }
+            .footer {
+                order: 4;
+            }
+        }
+        
+        @media all and (min-width:600px) {
+            .sidebar {
+                flex: 1;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="main">
+            <h1>Main</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium nam asperiores vitae minus debitis reprehenderit impedit, tempora nemo rerum soluta tempore minima veritatis nulla nesciunt quisquam in non accusamus corrupti numquam. Architecto,
+                cum dicta consectetur iure incidunt repellat alias vitae ipsa consequatur blanditiis, distinctio optio similique, eligendi repellendus totam debitis.</p>
+        </div>
+        <div class="sidebarl sidebar">
+            <h1>Sidebar-1</h1>
+        </div>
+        <div class="sidebarr  sidebar">
+            <h1>Sidebar-2</h1>
+        </div>
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

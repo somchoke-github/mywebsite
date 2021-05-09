@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        
+        .wrapper>* {
+            padding: 10px;
+            margin: 10px;
+            flex: 1;
+            flex-basis: 100%;
+            border-radius: 10px;
+        }
+        
+        .header {
+            background-color: tomato;
+            height: 120px;
+        }
+        
+        .footer {
+            background-color: lightgreen;
+            height: 80px;
+        }
+        
+        .main {
+            text-align: left;
+            background-color: deepskyblue;
+            height: 300px;
+            font-size: 20px;
+        }
+        
+        .aside1 {
+            background-color: gold;
+        }
+        
+        .aside2 {
+            background-color: hotpink;
+        }
+        
+        @media all and (min-width:800px) {
+            .main {
+                flex: 3;
+            }
+            .aside1 {
+                order: 1;
+            }
+            .aside2 {
+                order: 3;
+            }
+            .main {
+                order: 2;
+            }
+            .footer {
+                order: 4;
+            }
+        }
+        
+        @media all and (min-width:600px) {
+            .aside {
+                flex: 1;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<div class="wrapper">
+    <header class="header">
+        <h1> Header</h1>
+    </header>
+
+    <article class="main">
+        <p> Birds are a group of warm-blooded vertebrates constituting the class Aves /ˈeɪviːz/, characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet lightweight
+            skeleton. Birds live worldwide and range in size from the 5.5 cm (2.2 in) bee hummingbird to the 2.8 m (9 ft 2 in) ostrich.
+        </p>
+    </article>
+
+
+    <aside class="aside aside1">
+        <h1>Aside1</h1>
+    </aside>
+
+
+    <aside class="aside aside2">
+        <h1>Aside2</h1>
+    </aside>
+
+    <footer class="footer">
+        <h1>Footer</h1>
+    </footer>
+
+</div>
+
+
+</html>

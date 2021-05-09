@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #968c83;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+}
+
+.tps {
+    width: 500px;
+    height: 400px;
+    border-radius: 10%;
+    background-color: peachpuff;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 10px;
+}
+
+.tpshead {
+    background-color: chartreuse;
+    font-size: 1.5em;
+}
+
+.tps4steps {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    top: 35px;
+    left: 20px;
+}
+
+.tpsfoot {
+    width: 500px;
+    height: 25px;
+    background-color: palevioletred;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.wscobj {
+    padding: 40px;
+    text-align: justify;
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    top: 10px;
+    left: 5px;
+}
+
+.sevensteps {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.tpscondition {
+    text-align: justify;
+    margin: 0px 35px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.twos {
+    text-align: justify;
+    margin: 10px 35px 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.whatis2s {
+    text-align: left;
+    margin: 25px 30px 0px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.whatis2s table {
+    padding: 20px;
+}
+
+.safety {
+    text-align: left;
+    margin: 50px 15px 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.safety li {
+    padding: 10px;
+}
+
+.tmetps {
+    text-align: justify;
+    margin: 0px 15px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 22px;
+    padding-top: 0px;
+    padding-right: 45px;
+}
+
+.safety {
+    text-align: justify;
+    margin: 0px 10px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+
+.safety li {
+    margin: 0px;
+    padding: 5px;
+}
+
+.safety h3 {
+    margin: 10px 0px 0px;
+}
+
+.wsctps {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.beforeafter {
+    flex: 1;
+    height: 210px;
+    font-size: 2rem;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.beforeafter img {
+    border-radius: 10px;
+}
+
+.wschead {
+    background-color: chartreuse;
+    font-size: 1.0em;
+}
+
+.wscfooter {
+    display: flex;
+    font-size: 0.7rem;
+    text-align: justify;
+    height: 95px;
+    margin: 2px;
+}
+
+.wscfooter div {
+    background-color: coral;
+    margin: 1px;
+    padding: 6px;
+    flex: 1;
+    border-radius: 10px;
+}
