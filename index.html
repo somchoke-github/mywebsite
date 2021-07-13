@@ -58,6 +58,8 @@
             margin: 0;
         }
     </style>
+
+
 </head>
 
 <body>
@@ -65,6 +67,20 @@
         <h1>APE 100 Website</h1>
         <p>A website created by </p>
         <h2>Somchoke Sontikaew</h2>
+        <p id="datetime"></p>
+    </div>
+
+    <div>
+        <script>
+            function liveDateTime() {
+                const myDateTime = new Date().toLocaleString('en-Us', {
+                    timeZone: 'Asia/Bangkok'
+                });
+                document.getElementById("datetime").innerHTML = myDateTime.toString();
+                setTimeout("liveDateTime()", 1000)
+            }
+            liveDateTime();
+        </script>
     </div>
     <div class="menubar">
         <a href="Myjavascript\calculator.html" target="_blank">Basic Calculator</a>
