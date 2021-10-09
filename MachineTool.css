@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-color: #BCFFB9;
+    font-family: 'K2D', sans-serif;
+}
+
+.header {
+    background-color: #28FFBF;
+    color: saddlebrown;
+    text-align: center;
+    padding: 40px;
+}
+
+.menu {
+    background-color: #F5FDB0;
+    overflow: hidden;
+    font-size: 1.0rem;
+}
+
+.menu a {
+    display: block;
+    float: left;
+    padding: 10px 12px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.menu a:hover {
+    background-color: #F7E6AD;
+}
+
+.backtomenu {
+    margin: 10px;
+    padding: 5px;
+    color: rgb(0, 128, 11);
+}
+
+.backtomenu:hover {
+    background-color: yellow;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 10px;
+    text-align: center;
+    list-style: none;
+}
+
+h4 {
+    color: darkred;
+    background-color: lime;
+    margin: 0px;
+}
